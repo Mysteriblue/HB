@@ -13,13 +13,33 @@
         <style>
             h1 {
                 text-decoration: none;
-                
+                position: fixed;
+                color: white;
             }
         </style>
 
-    <video autoplay muted loop>
+<div class="video">
+    <style> 
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #videoBG {
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+    }
+
+    @media all and (max-width:600px) {}
+    
+    </style>
+    <video id="videoBG" autoplay muted loop>
         <source src="video.mp4" type="video/mp4">
     </video>
-
+</div>
 </body>
 </html>
